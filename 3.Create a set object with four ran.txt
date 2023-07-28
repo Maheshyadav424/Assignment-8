@@ -1,0 +1,31 @@
+3.Create a set object with four random numbers from 0 to 10. Check if this
+newly created set object has 8 in it. Use set object methods.
+
+
+ANS:
+// Function to generate a random integer between min (inclusive) and max (inclusive)
+
+function getRandomInteger(min, max) 
+{
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+// Creating a new Set object with four random numbers
+
+const mySet = new Set();
+while (mySet.size < 4)
+ {
+  const randomNum = getRandomInteger(0, 10);
+  mySet.add(randomNum);
+}
+
+
+
+console.log("Set with four random numbers:", mySet);
+
+
+// Checking if the set contains the number 8
+const hasNumber8 = mySet.has(8);
+console.log("Does the set contain the number 8?", hasNumber8);

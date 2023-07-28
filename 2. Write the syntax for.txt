@@ -1,0 +1,21 @@
+2. Write the syntax for
+a) Creating new set object
+b) Adding new element to set object
+c) Deleting element from set object
+
+ANS:     a) const mySet = new Set();
+
+  b)const mySet = new Set();
+
+// Adding elements using the add() method
+mySet.add(1);
+mySet.add('hello');
+mySet.add(true);
+
+
+
+c)const mySet = new Set([1, 2, 3, 4]);
+
+// Deleting an element using the delete() method
+mySet.delete(3);
+
